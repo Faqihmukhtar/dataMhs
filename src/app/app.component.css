@@ -1,0 +1,108 @@
+* {
+    background-color: transparent;
+ }
+ .navbar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 20px;
+   background-color: #ffffff;
+ }
+ 
+  
+  .navbar h1 {
+    margin-left: 30px;
+    background-image: linear-gradient(to right, rgba(24, 231, 213, 0.8), rgba(57, 57, 249, 0.8));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  
+  .navbar ul {
+    display: flex;
+    list-style: none;
+    margin-right: 30px;
+    padding: 0;
+  }
+  
+  .navbar li {
+    margin-left: 20px;
+  }
+ 
+  .navbar button {
+    background-color: rgba(57, 57, 249, 0.8);
+    border: none;
+    padding: 10px 20px;
+    margin-left: 20px;
+    color: #ffffff;
+  }
+ 
+  .navbar button:hover {
+    background-color: rgba(34, 34, 177, 0.8);
+    border: none;
+    padding: 10px 20px;
+    margin-left: 20px;
+    color: #ffffff;
+  }
+  
+  .navbar li:first-child {
+    margin-left: 0;
+  }
+  
+  .navbar li button {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(57, 57, 249, 0.8);
+    font-weight: bold;
+    margin-left: 10px;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border-radius: 7px;
+  }
+
+  .navbar li button:hover {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(31, 31, 227, 0.8);
+    font-weight: bold;
+    margin-left: 10px;
+    letter-spacing: 1px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    border-radius: 7px;
+  }
+  
+  .navbar li i {
+    color: #762abe;
+    margin-right: 15px;
+    font-size: large;
+  }
+  
+  .navbar li button.login-button {
+   background-color: #4CAF50; 
+   color: #ffffff;
+ }
+ 
+  .navbar li button.login-button:hover {
+   background-color: #348837; 
+   color: #ffffff;
+ }
+ 
+ .navbar li button.logout-button {
+   background-color: #f05c4e; 
+   color: #ffffff;
+ }
+ 
+ .navbar li button.logout-button:hover {
+   background-color: #c2392d; 
+   color: #ffffff;
+ }
+ 
+ 
+ 

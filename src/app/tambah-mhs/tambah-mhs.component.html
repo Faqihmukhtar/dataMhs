@@ -1,0 +1,26 @@
+<h2>Tambah Data Mahasiswa</h2>
+
+<form (submit)="tambahMahasiswa()">
+  <div>
+    <label for="nim">NIM:</label>
+    <input type="text" id="nim" [(ngModel)]="mahasiswa.nim" name="nim" required>
+  </div>
+
+  <div>
+    <label for="nama">Nama:</label>
+    <input type="text" id="nama" [(ngModel)]="mahasiswa.nama" name="nama" required>
+  </div>
+
+  <div>
+    <label for="jenisKelamin">Jenis Kelamin:</label>
+    <input type="text" id="jenisKelamin" [(ngModel)]="mahasiswa.jenisKelamin" name="jenisKelamin" required>
+  </div>
+
+  <div>
+    <label for="programStudi">Program Studi:</label>
+    <input type="text" id="programStudi" [(ngModel)]="mahasiswa.programStudi" name="programStudi" required>
+  </div>
+
+  <button type="submit">Tambah</button>
+  <button routerLink="/" type="button">Cancel</button>
+</form>

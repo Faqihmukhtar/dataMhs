@@ -1,0 +1,29 @@
+<h2>Data Mahasiswa</h2>
+<div class="container">
+  <table>
+    <thead>
+      <tr>
+        <th>NIM</th>
+        <th>Nama</th>
+        <th>Jenis Kelamin</th>
+        <th>Program Studi</th>
+        <th *ngIf="isLoggedIn()"></th>
+        <th *ngIf="isLoggedIn()"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let mahasiswa of mahasiswas">
+        <td>{{ mahasiswa.nim }}</td>
+        <td>{{ mahasiswa.nama }}</td>
+        <td>{{ mahasiswa.jenisKelamin }}</td>
+        <td>{{ mahasiswa.programStudi }}</td>
+        <td *ngIf="isLoggedIn()" >
+          <button class="edit" (click)="editMahasiswa(mahasiswa._id)">Edit</button> 
+        </td>
+        <td *ngIf="isLoggedIn()">
+          <button class="hapus"(click)="deleteMahasiswa(mahasiswa)">Hapus</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
